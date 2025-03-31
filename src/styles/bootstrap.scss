@@ -1,0 +1,151 @@
+// Required functions import
+@import "bootstrap/scss/functions";
+
+// Optional variable overrides
+$primary: #ffa500;
+$secondary: #5a6e2f;
+
+// Required imports
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// Optional components
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/nav";
+// @import 'bootstrap/scss/accordion';
+// @import 'bootstrap/scss/alert';
+// @import 'bootstrap/scss/badge';
+// @import 'bootstrap/scss/breadcrumb';
+// @import 'bootstrap/scss/button-group';
+// @import 'bootstrap/scss/buttons';
+// @import 'bootstrap/scss/card';
+// @import 'bootstrap/scss/carousel';
+// @import 'bootstrap/scss/close';
+// @import 'bootstrap/scss/dropdown';
+// @import 'bootstrap/scss/forms';
+// @import 'bootstrap/scss/grid';
+// @import 'bootstrap/scss/list-group';
+// @import 'bootstrap/scss/modal';
+// @import 'bootstrap/scss/navbar';
+// @import 'bootstrap/scss/offcanvas';
+// @import 'bootstrap/scss/pagination';
+// @import 'bootstrap/scss/placeholders';
+// @import 'bootstrap/scss/popover';
+// @import 'bootstrap/scss/progress';
+// @import 'bootstrap/scss/spinners';
+// @import 'bootstrap/scss/tables';
+// @import 'bootstrap/scss/toasts';
+// @import 'bootstrap/scss/tooltip';
+// @import 'bootstrap/scss/transitions';
+
+// Optional helpers
+// @import 'bootstrap/scss/helpers';
+
+// Optional utilities
+@import "bootstrap/scss/utilities/api";
+
+// Import everything for develop
+@import "bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+//timeline
+.py-8 {
+  padding-bottom: 4.5rem !important;
+  padding-top: 4.5rem !important;
+}
+@media (min-width: 576px) {
+  .py-sm-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .py-md-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .py-lg-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .py-xl-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .py-xxl-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+}
+.bsb-timeline-1 {
+  --bsb-tl-color: var(--bs-primary-bg-subtle);
+  --bsb-tl-circle-color: var(--bs-primary);
+  --bsb-tl-circle-size: 18px;
+  --bsb-tl-circle-offset: 9px;
+}
+.bsb-timeline-1 .timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.bsb-timeline-1 .timeline:after {
+  background-color: var(--bsb-tl-color);
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+.bsb-timeline-1 .timeline > .timeline-item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.bsb-timeline-1 .timeline > .timeline-item:before {
+  background-color: var(--bsb-tl-circle-color);
+  border-radius: 50%;
+  content: "";
+  height: var(--bsb-tl-circle-size);
+  left: calc(var(--bsb-tl-circle-offset) * -1);
+  position: absolute;
+  top: 0;
+  width: var(--bsb-tl-circle-size);
+  z-index: 1;
+}
+.bsb-timeline-1 .timeline > .timeline-item .timeline-body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.bsb-timeline-1 .timeline > .timeline-item .timeline-content {
+  padding: 0 0 2.5rem 2.5rem;
+}
+@media (min-width: 768px) {
+  .bsb-timeline-1 .timeline > .timeline-item .timeline-content {
+    padding-bottom: 3rem;
+  }
+}
+.bsb-timeline-1 .timeline > .timeline-item:last-child .timeline-content {
+  padding-bottom: 0;
+}
