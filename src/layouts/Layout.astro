@@ -11,7 +11,12 @@ import "../styles/bootstrap.scss";
     <title>Fabricio Bartomeu</title>
     <meta name="description" content="Portfolio de Fabricio Bartomeu" />
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-spy"
+    data-bs-offset="100"
+    tabindex="0"
+  >
     <slot />
     <script>
       // Import only what you need

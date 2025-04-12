@@ -4,9 +4,9 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg p-3 sticky-top bg-dark">
+  <nav class="navbar navbar-expand-lg p-3 sticky-top bg-dark" id="navbar-spy">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">🇵🇾 Fabricio 🇵🇾</a>
+      <a class="navbar-brand fw-bold mi-link-navbar" href="#">🇵🇾 Fabricio 🇵🇾</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -18,22 +18,37 @@ import Layout from "../layouts/Layout.astro";
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Inicio</a>
+            <a class="nav-link mi-link-navbar" href="#home">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">Sobre Mí</a>
+            <a class="nav-link mi-link-navbar" href="#about">Sobre Mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#work">Trayectoria</a>
+            <a class="nav-link mi-link-navbar" href="#experience">Experiencia</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Proyectos</a>
+            <a class="nav-link mi-link-navbar" href="#projects">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacto</a>
+            <a class="nav-link mi-link-navbar" href="#contact">Contáctame</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 </Layout>
+
+<style>
+  .mi-link-navbar {
+    color: white; /* color base */
+    transition: color 0.3s ease;
+  }
+
+  .mi-link-navbar:hover {
+    color: #ffa500; /* color al pasar el mouse */
+  }
+  .navbar {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+</style>
