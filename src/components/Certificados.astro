@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section id="certificados" class="my-5 text-center">
+    <h2 class="fst-italic mb-4 fw-bold display-5">Certificados</h2>
+    <button
+      type="button"
+      class="btn btn-secondary btn-lg text-white"
+      data-bs-toggle="modal"
+      data-bs-target="#certModal"
+    >
+      Ver certificados
+    </button>
+
+    <div
+      class="modal fade"
+      id="certModal"
+      tabindex="-1"
+      aria-labelledby="certModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certModalLabel">Mis Certificados</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Certificado 1 -->
+            <div class="mb-3">
+              <img
+                src="/my_portfolio/src/assets/certificado_mentor.png"
+                class="img-fluid rounded"
+                alt="Certificado Mentor"
+              />
+            </div>
+
+            <!-- Certificado 2 -->
+            <div class="mb-3">
+              <img
+                src="/my_portfolio/src/assets/certificado_ccpa.png"
+                class="img-fluid rounded"
+                alt="Certificado CCPA"
+              />
+            </div>
+
+            <!-- Certificado 3 -->
+            <div class="mb-3">
+              <img
+                src="/my_portfolio/src/assets/certificado_ccpa_2.png"
+                class="img-fluid rounded"
+                alt="Certificado CCPA"
+              />
+            </div>
+
+            <!-- Certificado 4 -->
+            <div class="mb-3">
+              <img
+                src="/my_portfolio/src/assets/certificado_ia.png"
+                class="img-fluid rounded"
+                alt="Certificado IA"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
